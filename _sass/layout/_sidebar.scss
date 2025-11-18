@@ -53,7 +53,7 @@
   p,
   li {
     font-family: $sans-serif;
-    font-size: 1.0em; /* 调整左侧栏链接和描述文字字体大小 */
+    font-size: 0.9em; /* 缩小左侧栏链接和描述文字字体大小 */
     line-height: 1.5;
   }
 }
@@ -132,7 +132,7 @@
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: 1.2em; /* 调整作者名称字体大小 */
+  font-size: 1.0em; /* 缩小作者名称字体大小 */
 }
 
 .sidebar .author__desktop {
