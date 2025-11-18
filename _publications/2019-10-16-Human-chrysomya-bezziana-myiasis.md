@@ -17,4 +17,4 @@ We retrieved 1,048 reports from which 202 studies were ultimately eligible for i
 Conclusion
 Our findings indicate that cryptic myiasis cases due to the obligate parasite, C. bezziana, are under-recognized. Through this study on C. bezziana etiology, clinical features, diagnosis, treatment, epidemiology, prevention and control, we call for more vigilance and awareness of the disease from governments, health authorities, clinicians, veterinary workers, nursing homes, and also the general public.
 
-<br/><img src='images/GraphicalAbstract-Para.Bez.png'>
+<br/><img src='images/publication/2019-10-16-Human-chrysomya-bezziana-myiasis.png'>
