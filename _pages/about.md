@@ -9,7 +9,6 @@ redirect_from:
 
 <div class="about-content">
   <div class="about-section">
-    <h2 class="about-title">个人简介</h2>
     <p class="about-text">
       2017年南方医科大学公共卫生学院预防医学专业本科，2023年南方医科大学病原生物学专业博士，南方医科大学公共卫生学院军事预防医学博士后。
     </p>
@@ -25,7 +24,6 @@ redirect_from:
   </div>
 
   <div class="about-section">
-    <h2 class="about-title">Biography</h2>
     <p class="about-text">
       Bachelor's degree in Preventive Medicine from the School of Public Health, Southern Medical University (2017); Ph.D. in Pathogenic Biology from Southern Medical University (2023); Postdoctoral researcher in Military Preventive Medicine at the School of Public Health, Southern Medical University.
     </p>
