@@ -1,6 +1,6 @@
 ---
 title: "Field investigation combined with modeling uncovers the ecological heterogeneity of Aedes albopictus habitats for strategically improving systematic management during urbanization"
-image: "/images/publications/GraphicalAbstract-Ae.Habitat.png"
+image: "/images/publications/2023-10-25-Field-investigation-combined-with-modeling.jpg"
 collection: publications
 category: manuscripts_Ae
 permalink: /publication/2023-10-25-Field-investigation-combined-with-modeling
