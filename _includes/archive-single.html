@@ -42,7 +42,7 @@
           {% if post.collection == 'teaching' %}
             <p style="font-size: 0.9em; color: #666; margin-bottom: 0.5em;"> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
           {% elsif post.collection == 'publications' %}
-            <p style="font-size: 0.9em; color: #666; margin-bottom: 0.5em;">Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}&nbsp;&nbsp;{% if post.paperurl %}<a href=" {{ post.paperurl }} " style="color: #cc0000; text-decoration: none;">[PDF]</a>{% endif %}</p>
+            <p style="font-size: 0.9em; color: #666; margin-bottom: 0.5em;"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}&nbsp;&nbsp;{% if post.paperurl %}<a href=" {{ post.paperurl }} " style="color: #cc0000; text-decoration: none;">[PDF]</a>{% endif %}</p>
           {% elsif post.date %}
            <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
           {% endif %}
@@ -70,13 +70,5 @@
       {% endif %}
     </div>
     
-    <div class="archive__item-image" style="width: 120px; height: auto; margin-left: 20px; background-color: #f0f0f0; border: 1px solid #ddd; display: flex; align-items: flex-start; justify-content: center; min-height: 80px;">
-      {% if post.image %}
-        <img src="{{ post.image }}" alt="{{ title }}" style="width: 100%; height: auto; object-fit: cover;">
-      {% else %}
-        <span style="color: #999; font-size: 10px;">图片位置</span>
-      {% endif %}
-    </div>
-
   </article>
 </div>

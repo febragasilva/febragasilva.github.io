@@ -215,6 +215,7 @@
 
         a {
           margin-left: 0;
+          font-size: 1.1em; /* 调整导航栏标题字体大小 */
         }
       }
 
@@ -223,6 +224,10 @@
           margin-right: 0;
         }
       }
+    }
+
+    a {
+      font-size: 1.0em; /* 调整导航栏链接字体大小 */
     }
 
     #theme-toggle {
