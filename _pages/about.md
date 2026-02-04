@@ -1,7 +1,7 @@
 ---
 permalink: /
 #title: "XiangGuo Group"
-author_profile: false
+author_profile: ture
 redirect_from:
   - /about/
   - /about.html
