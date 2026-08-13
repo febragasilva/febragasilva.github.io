@@ -7,6 +7,7 @@ excerpt: 'Chrysomya bezziana larvae are characterized by feeding aggressively on
 date: 2019-10-16
 venue: 'PLoS Neglected Tropical Diseases'
 paperurl: 'https://journals.plos.org/plosntds/article/file?id=10.1371/journal.pntd.0007391&type=printable'
+image: '/images/pub/2019-10-16-Human-chrysomya-bezziana-myiasis.png'
 ---
 Background
 Myiasis due to Old World screw-worm fly, Chrysomya bezziana, is an important obligate zoonotic disease in the OIE-list of diseases and is found throughout much of Africa, the Indian subcontinent, southeast and east Asia. C. bezziana myiasis causes not only morbidity and death to animals and humans, but also economic losses in the livestock industries. Because of the aggressive and destructive nature of this disease in hosts, we initiated this study to provide a comprehensive understanding of human myiasis caused by C. bezziana.

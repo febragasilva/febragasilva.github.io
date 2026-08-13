@@ -7,6 +7,7 @@ permalink: /publication/2025-08-08-Insights-on-the-sex-determination-vector-capa
 date: 2025-08-08
 venue: 'Infectious Diseases of Poverty'
 paperurl: 'https://idpjournal.biomedcentral.com/counter/pdf/10.1186/s40249-025-01353-1.pdf'
+image: '/images/pub/2025-08-08-Insights-on-the-sex-determination-vector-capacity-and-ecological.png'
 ---
 Our study provides insights into the molecular basis of vector competence and adaptation in Ar. subalbatus. The expanded detoxification gene families may enable the species to survive in polluted environments, while the identified diapause-related genes could explain its geographical expansion capabilities. These findings establish a foundation for developing novel vector control strategies targeting this emerging disease vector.
 

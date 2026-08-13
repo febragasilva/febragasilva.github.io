@@ -7,6 +7,7 @@ excerpt: 'Our field-based modeling study reveals that hourly host-seeking behavi
 date: 2019-10-14
 venue: 'Parasites & Vectors'
 paperurl: 'https://idpjournal.biomedcentral.com/counter/pdf/10.1186/10.1186/s13071-019-3715-1.pdf'
+image: '/images/pub/2019-10-14-A-field-based-modeling-study-on-ecological-characterization.png'
 ---
 Background
 The global spread of mosquito-borne diseases (MBD) has presented increasing challenges to public health. The transmission of MBD is mainly attributable to the biting behaviors of female mosquitoes. However, the ecological pattern of hourly host-seeking behavior in Aedes albopictus and its association with climatic variables are still not well understood, especially for a precise requirement for establishing an effective risk prediction system of MBD transmission.

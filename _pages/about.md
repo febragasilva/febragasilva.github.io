@@ -1,10 +1,8 @@
 ---
-permalink: /
-#title: "XiangGuo Group"
-author_profile: ture
-redirect_from:
-  - /about/
-  - /about.html
+title: "郭祥 Xiang Guo"
+permalink: /team/xiang-guo/
+author: "Xiang Guo"
+author_profile: true
 ---
 
 <div class="about-content">
@@ -35,8 +33,3 @@ redirect_from:
     </p>
   </div>
 </div>
-
-
-
-
-

@@ -2,32 +2,72 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
-author_profile: true
+author_profile: false
+hide_title: true
 ---
-
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
+  {% for category in site.publication_category %}
     {% assign title_shown = false %}
+    {% assign cat_items = "" | split: "" %}
     {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
+      {% if post.category == category[0] %}
+        {% assign cat_items = cat_items | push: post %}
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
     {% endfor %}
+    {% if cat_items.size > 0 %}
+      <h2 class="pub-category-title">{{ category[1].title }}</h2>
+      <div class="pub-grid">
+        {% for post in cat_items %}
+          <div class="pub-item">
+            <div class="pub-item-image">
+              {% if post.image %}
+                <img src="{{ base_path }}{{ post.image }}" alt="{{ post.title }}" />
+              {% else %}
+                <img src="{{ '/images/pub-placeholder.svg' | prepend: base_path }}" alt="{{ post.title }}" />
+              {% endif %}
+            </div>
+            <div class="pub-item-text">
+              {% if post.link %}
+              <a href="{{ post.link }}" class="pub-item-title">{{ post.title }}</a>
+              {% else %}
+              <a href="{{ base_path }}{{ post.url }}" class="pub-item-title">{{ post.title }}</a>
+              {% endif %}
+              <div class="pub-item-meta">
+                {{ post.venue }}, {{ post.date | date: "%Y" }}
+                {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-item-pdf">[PDF]</a>{% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+  <div class="pub-grid">
+    {% for post in site.publications reversed %}
+      <div class="pub-item">
+        <div class="pub-item-image">
+          {% if post.image %}
+            <img src="{{ post.image | prepend: "/images/" | prepend: base_path }}" alt="{{ post.title }}" />
+          {% else %}
+            <img src="{{ '/images/pub-placeholder.svg' | prepend: base_path }}" alt="{{ post.title }}" />
+          {% endif %}
+        </div>
+        <div class="pub-item-text">
+          {% if post.link %}
+          <a href="{{ post.link }}" class="pub-item-title">{{ post.title }}</a>
+          {% else %}
+          <a href="{{ base_path }}{{ post.url }}" class="pub-item-title">{{ post.title }}</a>
+          {% endif %}
+          <div class="pub-item-meta">
+            {{ post.venue }}, {{ post.date | date: "%Y" }}
+            {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-item-pdf">[PDF]</a>{% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 {% endif %}
-
-
-

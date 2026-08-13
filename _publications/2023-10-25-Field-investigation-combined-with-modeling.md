@@ -8,6 +8,7 @@ excerpt: 'Ecological heterogeneity of habitat preferences of Ae. albopictus was 
 date: 2023-10-25
 venue: 'Parasites & Vectors'
 paperurl: 'https://parasitesandvectors.biomedcentral.com/counter/pdf/10.1186/s13071-023-05926-7.pdf'
+image: '/images/pub/2023-10-25-Field-investigation-combined-with-modeling.png'
 ---
 Background
 Aedes albopictus is an invasive vector of serious Aedes-borne diseases of global concern. Habitat management remains a critical factor for establishing a cost-effective systematic strategy for sustainable vector control. However, the community-based characteristics of Ae. albopictus habitats in complex urbanization ecosystems are still not well understood.

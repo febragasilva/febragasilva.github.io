@@ -7,6 +7,7 @@ excerpt: 'Based on the oviposition behavior of Ae. albopictus, a novel Improved 
 date: 2025-09-24
 venue: 'Parasites & Vectors'
 paperurl: 'https://parasitesandvectors.biomedcentral.com/counter/pdf/10.1186/s13071-025-07002-8.pdf'
+image: '/images/pub/2025-09-24-An-improved-ovitrap-based-survellance-framework.png'
 ---
 Background
 Dengue fever, transmitted primarily by Aedes aegypti and Ae. albopictus, remains one of the most pervasive mosquito-borne diseases worldwide. In China, the mosquito oviposition trap (MOT) - based Aedes monitoring system has become a cornerstone for dengue prevention and control. However, during outbreaks, this system faces operational challenges because of its labour-intensive nature and time requirements, limiting its efficiency for rapid vector control assessment. 

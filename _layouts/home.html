@@ -1,0 +1,68 @@
+---
+layout: none
+---
+
+<!doctype html>
+{% include base_path %}
+<html lang="{{ site.locale | slice: 0,2 | default: 'en' }}" class="no-js">
+<head>
+  {% include head.html %}
+</head>
+<body class="layout--home">
+
+  {% include browser-upgrade.html %}
+  {% include masthead.html %}
+
+  {% if page.header.overlay_image %}
+  {% if page.header.overlay_image contains "://" %}
+    {% capture overlay_img_path %}{{ page.header.overlay_image }}{% endcapture %}
+  {% else %}
+    {% capture overlay_img_path %}{{ page.header.overlay_image | prepend: "/images/" | prepend: base_path }}{% endcapture %}
+  {% endif %}
+  {% endif %}
+
+  {% if page.header.overlay_filter contains "rgba" %}
+    {% capture overlay_filter %}{{ page.header.overlay_filter }}{% endcapture %}
+  {% elsif page.header.overlay_filter %}
+    {% capture overlay_filter %}rgba(0, 0, 0, {{ page.header.overlay_filter }}){% endcapture %}
+  {% endif %}
+
+  <div class="home-hero" style="{% if overlay_img_path %}background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}), {% endif %}url('{{ overlay_img_path }}');{% endif %}">
+    <div class="home-hero-inner">
+      {{ content }}
+    </div>
+  </div>
+
+  <div class="page__footer" style="background: rgba(0,0,0,0.6); color: #ccc;">
+    <div class="page__footer-follow">
+      <ul class="social-icons">
+        {% if site.data.ui-text[site.locale].follow_label %}
+          <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+        {% endif %}
+        {% include social.html %}
+      </ul>
+    </div>
+    <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</div>
+  </div>
+
+<script>
+(function() {
+  var masthead = document.querySelector('.masthead');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 80) {
+      masthead.style.background = 'var(--global-bg-color)';
+      masthead.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+      masthead.querySelectorAll('a').forEach(function(a) { a.style.color = ''; });
+      masthead.querySelectorAll('.masthead__menu-item').forEach(function(el) { el.style.backgroundColor = ''; });
+    } else {
+      masthead.style.background = 'transparent';
+      masthead.style.boxShadow = 'none';
+      masthead.querySelectorAll('a').forEach(function(a) { a.style.color = '#fff'; });
+      masthead.querySelectorAll('.masthead__menu-item').forEach(function(el) { el.style.backgroundColor = 'transparent'; });
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

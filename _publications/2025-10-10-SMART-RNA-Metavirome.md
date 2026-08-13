@@ -7,6 +7,7 @@ excerpt: 'The SMART-RNA-Metavirome platform outperforms traditional methods, enr
 date: 2025-10-10
 venue: 'Infectious Diseases of Poverty'
 paperurl: 'https://idpjournal.biomedcentral.com/counter/pdf/10.1186/s40249-025-01371-z.pdf'
+image: '/images/pub/2025-10-10-SMART-RNA-Metavirome.png'
 ---
 Background
 The RNA virosphere's extensive diversity and its role in emerging infectious diseases underscore the importance of non-targeted sequencing for identifying unknown or rare pathogens, including co-infections. However, enriching low-abundance viral sequences in RNA metaviromics, particularly in the preparation of cDNA libraries and their compatibility with next-generation sequencing (NGS) and third-generation sequencing (TGS), remains challenging. Therefore, our objective is to develop and systematically assess a practical RNA metavirome methodology specifically tailored for the enrichment of low-abundance viral sequences within samples.

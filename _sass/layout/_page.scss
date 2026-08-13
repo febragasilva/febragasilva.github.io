@@ -36,23 +36,388 @@
   margin-bottom: 0;
 }
 
+/* ==========================================================================
+   HOME SPLASH PAGE
+   ========================================================================== */
+
+/* Full-screen hero for homepage */
+.layout--home .masthead {
+  background: transparent;
+  border-bottom: none;
+
+  &::after {
+    display: none;
+  }
+
+  .masthead__menu-item {
+    background-color: transparent;
+  }
+}
+
+.layout--home .masthead a,
+.layout--home .masthead__menu-item a {
+  color: #fff;
+}
+
+.layout--home .site-logo img {
+  filter: brightness(0) invert(1);
+}
+
+.layout--home .navicon {
+  background: #fff;
+}
+
+.layout--home .navicon::before,
+.layout--home .navicon::after {
+  background: #fff;
+}
+
+.home-hero {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.home-hero-inner {
+  max-width: 900px;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.home-splash {
+  text-align: center;
+  color: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.home-intro {
+  margin-bottom: 3rem;
+}
+
+.home-lab-name {
+  font-size: 2.2em;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.home-affiliation {
+  font-size: 1.1em;
+  margin-bottom: 0.3rem;
+  opacity: 0.9;
+}
+
+.home-affiliation-en {
+  font-size: 0.95em;
+  opacity: 0.75;
+}
+
+.home-research-areas {
+  margin-bottom: 3rem;
+}
+
+.home-research-areas h3 {
+  font-size: 1.3em;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.home-area-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.home-area-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  transition: background 0.3s;
+}
+
+.home-area-card:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.home-area-icon {
+  font-size: 2em;
+  margin-bottom: 0.8rem;
+}
+
+.home-area-card h4 {
+  font-size: 1.05em;
+  margin-bottom: 0.4rem;
+  color: #fff;
+}
+
+.home-area-card p {
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+.home-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.home-highlight-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-highlight-number {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.home-highlight-label {
+  font-size: 0.85em;
+  opacity: 0.75;
+}
+
+.home-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.home-links .btn {
+  min-width: 180px;
+}
+
+/* ==========================================================================
+   TEAM PAGE — bedford.io style
+   ========================================================================== */
+
+.team-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.team-intro {
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.team-intro p {
+  margin-bottom: 0.8rem;
+}
+
+.team-section-title {
+  font-size: 1.4em;
+  border-bottom: 1px solid var(--global-border-color);
+  padding-bottom: 0.4rem;
+  margin: 2.5rem 0 1.5rem;
+}
+
+/* Grid of circular avatar cards */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 2rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.team-person {
+  text-align: center;
+}
+
+.team-person a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.team-person a:hover {
+  text-decoration: none;
+}
+
+.team-person a:hover .team-name {
+  color: var(--global-link-color-hover);
+}
+
+.team-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 0.6rem;
+  display: block;
+  background: var(--global-border-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.team-person:hover .team-avatar {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.team-name {
+  font-size: 0.95em;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+  transition: color 0.2s;
+}
+
+.team-role {
+  font-size: 0.82em;
+  color: var(--global-text-color-light);
+}
+
+.team-join {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--global-bg-color);
+  border: 2px dashed var(--global-border-color);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.team-join h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.team-join p {
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .about-content {
     padding: 0.5rem;
   }
-  
+
   .about-section {
     margin-bottom: 1.5rem;
   }
-  
+
   .about-title {
     font-size: 1.0em;
   }
-  
+
   .about-text {
     font-size: 0.85em;
   }
+
+  .home-lab-name {
+    font-size: 1.6em;
+  }
+
+  .home-area-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-highlights {
+    gap: 1.5rem;
+  }
+
+  .home-highlight-number {
+    font-size: 2em;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 1.5rem 1rem;
+  }
+
+  .team-avatar {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* ==========================================================================
+   TOOLS PAGE
+   ========================================================================== */
+
+.tools-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tools-intro {
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.tools-intro p {
+  margin-bottom: 0.8rem;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tool-card {
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-border-color);
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.tool-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.tool-icon {
+  font-size: 2em;
+  color: var(--global-link-color);
+  margin-bottom: 0.8rem;
+}
+
+.tool-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15em;
+}
+
+.tool-desc {
+  font-size: 0.88em;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+  color: var(--global-text-color-light);
+}
+
+.tool-link {
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.tools-note {
+  margin-top: 2rem;
+  padding: 1.2rem 1.5rem;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  font-size: 0.9em;
+}
+
+.tools-note p {
+  margin: 0;
+}
+
+.tools-note i {
+  color: var(--global-link-color);
 }
 
 #main {
@@ -74,6 +439,15 @@
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
     @include suffix(2 of 12);
+  }
+
+  /* Full width when no sidebar is present */
+  #main:not(:has(.sidebar)) & {
+    @include breakpoint($large) {
+      @include span(full);
+      @include prefix(1 of 12);
+      @include suffix(1 of 12);
+    }
   }
 
   .page__inner-wrap {
@@ -451,4 +825,39 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+/*
+   DOI Section
+   ========================================================================== */
+
+.page__doi {
+  margin-bottom: 1.5em;
+  padding: 1em;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+/*
+   Weibo & WeChat Share Buttons
+   ========================================================================== */
+
+.btn--weibo {
+  background-color: #e6162d !important;
+  color: white !important;
+  border: none;
+
+  &:hover {
+    background-color: #c91326 !important;
+  }
+}
+
+.btn--wechat {
+  background-color: #07c160 !important;
+  color: white !important;
+  border: none;
+
+  &:hover {
+    background-color: #06a853 !important;
+  }
 }

@@ -1,15 +1,34 @@
 {% include base_path %}
 
+{% if page.paperurl %}
+<div class="page__doi">
+  <h4 class="page__share-title">DOI</h4>
+  <a href="{{ page.paperurl }}" class="btn btn--success" title="DOI Link"><i class="fas fa-external-link-alt" aria-hidden="true"></i><span> {{ page.paperurl }}</span></a>
+</div>
+{% endif %}
+
 <section class="page__share">
   {% if site.data.ui-text[site.locale].share_on_label %}
     <h4 class="page__share-title">{{ site.data.ui-text[site.locale].share_on_label | default: "Share on" }}</h4>
   {% endif %}
 
-  <a href="https://bsky.app/intent/compose?text={{ base_path }}{{ page.url }}" class="btn btn--bluesky" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>
-
   <a href="https://www.facebook.com/sharer/sharer.php?u={{ base_path }}{{ page.url }}" class="btn btn--facebook" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
   <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ base_path }}{{ page.url }}" class="btn btn--linkedin" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 
-  <a href="https://x.com/intent/post?text={{ base_path }}{{ page.url }}" class="btn btn--x" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X (formerly Twitter)</span></a>
+  <a href="https://x.com/intent/post?text={{ base_path }}{{ page.url }}" class="btn btn--x" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X</span></a>
+
+  <a href="https://service.weibo.com/share/share.php?url={{ base_path }}{{ page.url }}" class="btn btn--weibo" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Weibo"><i class="fab fa-weibo" aria-hidden="true"></i><span> 微博</span></a>
+
+  <a href="javascript:void(0)" class="btn btn--wechat" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} WeChat" onclick="copyToClipboard('{{ base_path }}{{ page.url }}')"><i class="fab fa-weixin" aria-hidden="true"></i><span> 微信</span></a>
 </section>
+
+<script>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(window.location.origin + text).then(function() {
+    alert('链接已复制，请粘贴到微信中分享');
+  }, function() {
+    prompt('请复制链接后在微信中分享:', window.location.origin + text);
+  });
+}
+</script>

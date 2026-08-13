@@ -7,6 +7,7 @@ permalink: /publication/2018-08-14-Photoperiodic-diapause-in-a-subtropical-popul
 date: 2018-08-14
 venue: 'Infectious Diseases of Poverty'
 paperurl: 'https://idpjournal.biomedcentral.com/counter/pdf/10.1186/s40249-018-0466-8.pdf'
+image: '/images/pub/2018-08-14-Photoperiodic-diapause-in-a-subtropical-population-of-Aedes-albopictus.png'
 ---
 Photoperiodic diapause of Ae. albopictus in Guangzhou of China was confirmed and comprehensively elucidated in both the laboratory and the field. Diapause eggs are the main form for overwintering and begin to hatch in large quantities in March in Guangzhou. Furthermore, this study also established an optimized investigation system and statistical models for the study of Ae. albopictus diapause. These findings will contribute to the prevention and control of Ae. albopictus and mosquito-borne diseases.
 

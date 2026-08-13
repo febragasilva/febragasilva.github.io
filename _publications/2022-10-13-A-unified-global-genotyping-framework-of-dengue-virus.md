@@ -7,6 +7,7 @@ excerpt: 'The genotyping framework and its utilization in quantitatively assessi
 date: 2022-10-13
 venue: 'Infectious Diseases of Poverty'
 paperurl: 'https://idpjournal.biomedcentral.com/counter/pdf/10.1186/s40249-022-01024-5.pdf'
+image: '/images/pub/2022-10-13-A-unified-global-genotyping-framework-of-dengue-virus.png'
 ---
 8th IDEA Forum and Journal's 10th Anniversary Celebration
 
