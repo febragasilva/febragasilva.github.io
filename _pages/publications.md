@@ -15,7 +15,7 @@ author_profile: true
 
 * **Interactor: Agentic RL oriented Iterative Creation for Ad Description Generation in Sponsored Search**  
 **Penghui Wei**, Jiayu Wu, Chao Ye, Zhi Guo, Shuanglong Li, Lin Liu  
-arXiv preprint arXiv:2606.15911. 
+**EMNLP ’26**, Industry Track: Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: Industry Track. Budapest, Hungary, October 24-29, 2026.  
 
 * **IDEATION: Diversifying Ad Text Generation in Sponsored Search with Latent Diffusion**  
 **Penghui Wei**  
@@ -27,11 +27,11 @@ Yilin Cao, Ruike Zhang, **Penghui Wei**†, Qingchao Kong, Wenji Mao
 
 * **Efficient LLM-based Advertising via Model Compression and Parallel Verification**  
 Wenxin Dong, Chang Gao, Guanghui Yu, Xuewu Jiao, Mingqing Hu, Qiang Fu, Peng Xu, **Penghui Wei**, Hui Xu, Yue Xing, Shuanglong Li, Lin Liu  
-arXiv preprint arXiv:2605.11582. In April 2024, the proposed INT4 sparsification method with SparseGEMV kernel implementation were fully deployed in production. More details can be found in the WeChat article (in Chinese): <a href="https://mp.weixin.qq.com/s/lGzwpLbTgGadGg8arDYeQw" target="_blank">[章节 1:4/2:4分层混合稀疏化]</a>  
+arXiv preprint arXiv:2605.11582. Since April 2024, the proposed weight sparsification method with SparseGEMV kernel (W4A16) implementation was fully deployed in production, serving the high-value traffic for real-time ad title generation under strict latency constraints. More details can be found in the WeChat article (in Chinese): <a href="https://mp.weixin.qq.com/s/lGzwpLbTgGadGg8arDYeQw" target="_blank">[章节 1:4/2:4分层混合稀疏化]</a>  
 
 * **CREATER: CTR-driven Advertising Text Generation with Controlled Pre-Training and Contrastive Fine-Tuning**  
 **Penghui Wei**, Xuanhua Yang, Shaoguo Liu, Liang Wang, Bo Zheng  
-**NAACL ’22**: Proceedings of the 2022 Annual Conference of the North American Chapter of the Association for Computational Linguistics, Industry Track, pages 9–17. Seattle, Washington, USA, July 10-15, 2022.
+**NAACL ’22**, Industry Track: Proceedings of the 2022 Annual Conference of the North American Chapter of the Association for Computational Linguistics, Industry Track, pages 9–17. Seattle, Washington, USA, July 10-15, 2022.
 
 * **Towards Personalized Bundle Creative Generation with Contrastive Non-Autoregressive Decoding**  
 **Penghui Wei**, Shaoguo Liu, Xuanhua Yang, Liang Wang, Bo Zheng  
