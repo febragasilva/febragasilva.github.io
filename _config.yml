@@ -24,13 +24,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Felipe Braga"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Estudante do segundo semestre de Matemática Aplicada a Negócios na USP de Ribeirão Preto."
+  location         : "SP"
+  employer         : "Universidade de São Paulo"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "felipebsilvarp@usp.br" 
 
   # Academic websites
   academia         : # URL
@@ -51,7 +51,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "https://github.com/febragasilva"
+  github           : "febragasilva"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "www.linkedin.com/in/felipe-braga-304733405"
+  linkedin         : "felipe-braga-304733405"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
