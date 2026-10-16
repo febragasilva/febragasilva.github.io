@@ -23,7 +23,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/perfil.jpeg"
+  avatar           : "https://github.com/febragasilva/febragasilva.github.io/blob/master/images/perfil.jpeg"
   name             : "Felipe Braga"
   pronouns         : # example: "she/her"  
   bio              : "Estudante do segundo semestre de Matemática Aplicada a Negócios na USP de Ribeirão Preto."
