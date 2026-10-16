@@ -1,7 +1,7 @@
 ---
 title: 'Meu primeiro post'
 date: 2026-10-26
-permalink:/posts/2026/10/titulo-do-post/
+permalink: /posts/2026/10/titulo-do-post/
 tags:
   - pesquisa
   - tutorial
