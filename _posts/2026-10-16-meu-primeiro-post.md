@@ -8,6 +8,4 @@ tags:
 ---
 # Meu primeiro post
 Com pequenos passos de tartaruga, começo a jornada neste novo pequeno blog!
-'''
-hello world!
-'''
+'''hello world!'''
