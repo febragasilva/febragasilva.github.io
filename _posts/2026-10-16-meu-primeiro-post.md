@@ -6,7 +6,8 @@ tags:
   - pesquisa
   - tutorial
 ---
-#Meu primeiro post
-'''python
-print("Hello world!")
+# Meu primeiro post
+Com pequenos passos de tartaruga, começo a jornada neste novo pequeno blog!
+'''
+hello world!
 '''
